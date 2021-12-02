@@ -1,7 +1,7 @@
 # Project
 
 ### André Almeida (up202010520), Sara Daniela Sousa (up201504217), Inês Rocha (up201606266)
-#### Faculdade de Ciências (2021)
+#### Segurança de Sistemas de Dados, Faculdade de Ciências (2021)
 
 
 ## 1 Distributed Ledger
