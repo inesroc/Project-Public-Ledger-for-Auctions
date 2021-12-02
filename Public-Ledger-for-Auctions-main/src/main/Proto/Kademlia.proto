@@ -1,0 +1,33 @@
+//option java_package = "Network";
+//option java_outer_classname = "ClientServerProto";
+//option objc_class_prefix = "RTG";
+
+syntax = "proto3";
+
+package Kad;
+
+option java_multiple_files = true;
+
+message Target {
+  string target_id = 1;
+  NodeInfo sender = 2;
+}
+message Nodes {
+  repeated NodeInfo nodes = 1;
+}
+
+message NodeInfo {
+  string id = 1;
+  string ip = 2;
+  string port = 3;
+}
+
+service PingService {
+  rpc Ping(Target) returns (NodeInfo) {}
+}
+service FindNodeService{
+  rpc FindNode(Target) returns (Nodes) {}
+}
+service FindValueService{
+  rpc Find_value(Target) returns (Nodes) {}
+}
